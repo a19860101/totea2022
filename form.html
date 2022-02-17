@@ -9,24 +9,32 @@
 <body>
     <h1>表單</h1>
     <form action="">
-        <label for="">姓名</label>
-        <input type="text">
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name">
         <br><br>
-        <label for="">E-mail</label>
-        <input type="email">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
         <br><br>
-        <label for="">出生年月日</label>
-        <input type="date">
+        <label for="birth">出生年月日</label>
+        <input type="date" name="birth" id="birth">
         <br><br>
-
-        <label for="">性別</label>
-        <label for="">
-            <input type="radio" name="gender">
-            男
+        <!-- id不能重複 -->
+        <label for="gender">性別</label>
+        <label for="m1">
+            <input type="radio" name="gender" id="m1" value="男">
+            生理性別男，心理性別男
         </label>
-        <label for="">
-            <input type="radio" name="gender">
-            女
+        <label for="f1">
+            <input type="radio" name="gender" id="f1" value="女">
+            生理性別女，心理性別女
+        </label>
+        <label for="m2">
+            <input type="radio" name="gender" id="m2" value="女">
+            生理性別男，心理性別女
+        </label>
+        <label for="f2">
+            <input type="radio" name="gender" id="f2" value="女">
+            生理性別女，心理性別男
         </label>
         <!-- <input type="radio" name="gender">
         <label for="">男</label>
@@ -34,11 +42,40 @@
         <label for="">女</label>
         <input type="radio" name="gender">
         <label for="">不透漏</label> -->
+        <br><br>
+
+        <label for="edu">學歷</label>
+        <select name="edu" id="edu">
+            <option>--請選擇--</option>
+            <option value="國小">國小</option>
+            <option value="國中">國中</option>
+            <option value="高中職">高中職</option>
+            <option value="大專院校">大專院校</option>
+            <option value="研究所以上">研究所以上</option>
+        </select>
 
         <br><br>
-        <label for="">備註</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for="skill">專長</label>
+        <label for="design">
+            <input type="checkbox" name="skill" id="design" value="平面繪圖">
+            平面繪圖
+        </label>
+        <label for="web">
+            <input type="checkbox" name="skill" id="web" value="網頁設計">
+            網頁設計
+        </label>
+        <label for="cut">
+            <input type="checkbox" name="skill" id="cut" value="影片剪輯">
+            影片剪輯
+        </label>
+
+        <br><br>
+        <label for="comment">備註</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
         <input type="submit" value="送出">
     </form>
+    <!-- 
+        name,id,for,value
+     -->
 </body>
 </html>
