@@ -10,9 +10,13 @@
         h2 {
             color: crimson;
         }
-        /* 類別選取器 */
+        /* 類別選取器 (可重複使用)*/
         .abc {
             color: greenyellow;
+        }
+        /* ID選取器 (不可重複使用，每個頁面只能出現一次)*/
+        #xyz {
+            color: orange;
         }
     </style>
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -25,7 +29,7 @@
     <p style="color:blue">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem expedita incidunt ea! Laudantium, ducimus iure. Totam nam, consequuntur eveniet exercitationem cum esse similique accusantium laborum deserunt et vitae voluptas unde?
     </p>
-    <h2>title</h2>
+    <h2 id="xyz">title</h2>
     <p class="abc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident enim fuga odit? Commodi aliquid a perspiciatis, aliquam id praesentium velit voluptas ducimus, voluptatum hic cum sint similique. Molestias, dolores sunt.
     </p>
