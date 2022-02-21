@@ -20,6 +20,27 @@ img {
     flex:1 0 0;
     padding: 15px;
 }
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+p {
+    line-height: 1.75em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e0ff7b;
+    color: #4d6400;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border:2px solid #80a700
+}
+/* ********************************** */
 nav {
     width: 100%;
     background-color: #222;
@@ -59,15 +80,18 @@ header img {
 #about {
     padding-top: 150px;
     padding-bottom: 150px;
+    background-color: #f7ffdc;
 }
-#about h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
+
 #about h3 {
     margin-bottom: 15px;
 }
-#about p {
-    line-height: 1.75em;
+
+
+#service {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+#service .col {
+    text-align: center;
 }
