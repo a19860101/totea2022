@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1100px;
+            /* height: 600px; */
+            margin: auto;
+
+            display: flex;
+            flex-direction: row;
+            /* row,column,row-reverse,column-reverse */
+            flex-wrap: wrap;
+            background-color: #ccc;
+
+            justify-content: space-between;
+            /* flex-start,flex-end,center,space-between,space-around,space-evenly */
+
+            align-items: center;
+            /* flex-start,flex-end,center,stretch,baseline */
+
+            gap:10px;
+        }
+        .box {
+            /* width: 250px; */
+            padding: 15px;
+            flex:0 0 calc(100% / 4 - 10px);
+            /* grow shrink basis */
+
+            background-color: #fa0;
+
+        }
+        .box:nth-of-type(1){
+            /* flex-basis: 500px; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
+            /* background-color: #fa0; */
+            /* align-self: stretch; */
+             /* flex-start,flex-end,center,stretch,baseline */
+        }
+        .box:nth-of-type(2){
+            /* flex-basis: 500px; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
+            /* background-color: crimson; */
+        }
+        .box:nth-of-type(3){
+            /* align-self: flex-end; */
+            /* flex-basis: 500px; */
+            /* flex-shrink: 0; */
+            /* flex-grow: 1; */
+            /* background-color: #098; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, nobis blanditiis reiciendis libero numquam sed placeat tempora quo, sint iusto illo, molestias quas laudantium soluta nesciunt ipsa iste. Repudiandae, illo?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam ex ad consequatur laborum nemo, rem nobis. Quae dolore alias in eaque repudiandae, ex, eum officia eos minima perferendis ut deserunt. Rerum reprehenderit accusamus dolores ab, maiores natus asperiores voluptatem.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi quibusdam, ab rem eum architecto sed eos illum totam porro?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 4</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, nobis blanditiis reiciendis libero numquam sed placeat tempora quo, sint iusto illo, molestias quas laudantium soluta nesciunt ipsa iste. Repudiandae, illo?
+            </p>
+        </div>
+        <!-- <div class="box">
+            <h2>title 5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam ex ad consequatur laborum nemo, rem nobis. Quae dolore alias in eaque repudiandae, ex, eum officia eos minima perferendis ut deserunt. Rerum reprehenderit accusamus dolores ab, maiores natus asperiores voluptatem.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 6</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi quibusdam, ab rem eum architecto sed eos illum totam porro?
+            </p>
+        </div> -->
+    </div>
+</body>
+</html>
