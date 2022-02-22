@@ -56,6 +56,8 @@ nav {
 
     display: flex;
     justify-content: space-between;
+
+    position: fixed;
 }
 
 nav a {
@@ -64,6 +66,7 @@ nav a {
     padding: 18px 15px;
     text-decoration: none;
     transition: .6s;
+    letter-spacing: 1px;
 }
 nav a:hover {
     background-color: #fff78a;
@@ -182,4 +185,13 @@ footer li {
     text-align: center;
     color: #fff;
     font-size: 14px;
+}
+/* gotop */
+
+.gotop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color:#80a700;
+    z-index: 999;
 }
