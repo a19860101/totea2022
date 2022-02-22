@@ -154,3 +154,32 @@ header img {
     display: inline-block;
     margin-bottom: 5px;
 }
+
+/* footer */
+footer {
+    background-color: #222;
+    padding-top: 50px;
+}
+footer a {
+    color: #eee;
+}
+footer a:hover {
+    color:#cafd22;
+}
+footer li {
+    list-style: none;
+    line-height: 1.75;
+}
+.sns {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+.copyright {
+    margin-top: 40px;
+    background-color:#131313;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
