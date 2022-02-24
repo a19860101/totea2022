@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" onkeyup="search()">
+    <ul id="coffee">
+        <li class="drink">每日精選咖啡</li>
+        <li class="drink">咖啡密斯朵</li>
+        <li class="drink">那堤</li>
+        <li class="drink">卡布奇諾</li>
+        <li class="drink">焦糖瑪奇朵</li>
+        <li class="drink">摩卡</li>
+        <li class="drink">馥列白</li>
+        <li class="drink">煙燻奶油糖風味那堤</li>
+        <li class="drink">Latte</li>
+    </ul>
+    <script>
+        //區分大小寫
+        function search(){
+            let input = document.querySelector('#search').value;
+            let drinks = document.querySelectorAll('.drink');
+            for(let drink of drinks){
+                if(drink.textContent.indexOf(input) > -1){
+                    drink.style.display = '';
+                }else{
+                    drink.style.display = 'none';
+                }
+            }
+        }
+        // 不區分大小寫
+        // function search(){
+        //     let input = document.querySelector('#search').value.toUpperCase();
+        //     let drinks = document.querySelectorAll('.drink');
+        //     for(let drink of drinks){
+        //         if(drink.textContent.toUpperCase().indexOf(input) > -1){
+        //             drink.style.display = '';
+        //         }else{
+        //             drink.style.display = 'none';
+        //         }
+        //     }
+        // }
+        let s = 'Hello';
+        console.log(s.toUpperCase())
+        console.log(s.toLowerCase())
+
+        // let coffee = document.querySelector('#coffee');
+        // let li = document.querySelectorAll('li');
+        // let drink = document.querySelectorAll('.drink');
+        // for(let data of drink){
+        //     console.log(data.textContent)
+        // }
+
+        // drink.forEach(function(data){
+        //     console.log(data.textContent);
+        // });
+
+        // console.log(drink);
+    </script>
+</body>
+</html>

@@ -17,7 +17,7 @@
         // let a = new Array('Apple','Banana','Cat');
         
         let a = ['Apple','Banana','Cat','Dog','Egg','Fork'];
-        console.log(a.length);
+        // console.log(a.length);
         // console.log(a);
         // console.log(a[0]);
         // console.log(a[1]);
@@ -42,7 +42,30 @@
         a.unshift('Zebra');
         a.shift();
         
+        // a.splice(2,1,'asdf','qwer');
+
+        let a_slice = a.slice(1,4);
+        // console.log(a_slice);
+
+        let a_join = a.join('?!!');
+        // console.log(a_join);
+        let a_string = a.toString();
+        // console.log(a_string);
+        
+        let s = 'hello,javascript,qwertyh';
+        let s_array = s.split(',');
+        // console.log(s_array);
+
+        // console.log(a.indexOf('Apple'))
+        // console.log(a.indexOf('Egg'))
+        // console.log(a.indexOf('asdf'))
+
+        a.forEach(function(item){
+            console.log(item)
+        });
+
         console.log(a);
+
     </script>
 </body>
 </html>
