@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .modal {
+            display: none;
+        }
+        .modal.active {
+            display: block;
+        }
         .modal-overlay {
             position: fixed;
             width: 100%;
@@ -26,8 +32,8 @@
     </style>
 </head>
 <body>
-    <a href="#">Modal 1</a>
-    <div class="modal">
+    <a href="#" data-modal="#modal-1" class="modal-btn">Modal 1</a>
+    <div class="modal" id="modal-1">
         <div class="modal-overlay"></div>
         <div class="modal-container">
             <div class="modal-header">
@@ -42,5 +48,13 @@
             </div>
         </div>
     </div>
+    <script>
+        let modalBtns = document.querySelectorAll('.modal-btn');
+        for(let modalBtn of modalBtns){
+            modalBtn.onclick = function(){
+                console.log(this);
+            }
+        }
+    </script>
 </body>
 </html>
