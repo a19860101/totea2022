@@ -13,6 +13,8 @@
             height: 600px;
             margin: auto;
             position: relative;
+
+            overflow: hidden;
         }
         .slider-wrapper {
             transition: .5s;
@@ -104,7 +106,7 @@
             wrapper.style.marginLeft = (-currentIndex) * defaultWidth + 'px';
 
         }
-
+        setInterval(slider,5000);
     </script>
 </body>
 </html>
