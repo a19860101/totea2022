@@ -39,5 +39,15 @@
             </div>
         </div>
     </div>
+    <script>
+        let imgs = document.querySelectorAll('.slider-item');
+        let totalImgs = imgs.length;
+        let currentIndex = 0;
+        let defaultWidth = document.querySelector('.slider').clientWidth;
+        let wrapper = document.querySelector('.slider-wrapper');
+        let wrapperWidth = defaultWidth * totalImgs;
+        
+        console.log(wrapperWidth);
+    </script>
 </body>
 </html>
