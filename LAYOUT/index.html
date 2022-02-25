@@ -21,8 +21,29 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-    <header>
-        <img src="https://picsum.photos/id/98/1600/1000" alt="">
+    <header class="slider">
+        <div class="slider-item active">
+            <img src="https://picsum.photos/id/87/1200/600" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="https://picsum.photos/id/17/1200/600" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="https://picsum.photos/id/27/1200/600" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="https://picsum.photos/id/37/1200/600" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="https://picsum.photos/id/47/1200/600" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="https://picsum.photos/id/57/1200/600" alt="">
+        </div>
+        <div class="slider-nav">
+            <a href="#" class="slider-prev"><i class="fa-solid fa-circle-chevron-left fa-2x"></i></i></a>
+            <a href="#" class="slider-next"><i class="fa-solid fa-circle-chevron-right fa-2x"></i></i></a>
+        </div>
     </header>
     <div id="about">
         <h2>About</h2>
@@ -265,5 +286,43 @@
         </div>
     </footer>
     <a href="#" class="gotop"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
+
+    <script>
+        let imgs = document.querySelectorAll('.slider-item');
+        let totalImgs = imgs.length;
+        let currentIndex = 0;
+
+        let prev = document.querySelector('.slider-prev');
+        let next = document.querySelector('.slider-next');
+
+        prev.onclick = function(){
+            slider('prev');
+        }
+        next.onclick = function(){
+            slider('next');
+        }
+
+        function slider(direction = 'next'){
+            if(direction == 'next'){
+                if(currentIndex == totalImgs - 1){
+                    currentIndex = 0;
+                }else{
+                    currentIndex++;
+                }
+            }else{
+                if(currentIndex == 0){
+                    currentIndex = totalImgs - 1;
+                }else{
+                    currentIndex--;
+                }
+            }
+            
+            console.log(currentIndex);
+            document.querySelector('.slider-item.active').classList.remove('active');
+            imgs[currentIndex].classList.add('active');
+        }
+
+        // setInterval(slider,3000);
+    </script>
 </body>
 </html>
