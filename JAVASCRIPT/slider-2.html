@@ -14,6 +14,9 @@
             margin: auto;
             position: relative;
         }
+        .slider-wrapper {
+            transition: .5s;
+        }
         .slider-item {
             float: left;
         }
@@ -72,7 +75,36 @@
 
         wrapper.style.width = wrapperWidth + 'px';
 
-        console.log(wrapperWidth);
+        let prev = document.querySelector('.slider-prev');
+        let next = document.querySelector('.slider-next');
+
+        prev.onclick = function(){
+            slider('prev');
+        }
+        next.onclick = function(){
+            slider('next');
+        }
+
+        function slider(direction = 'next'){
+            if(direction == 'next'){
+                if(currentIndex == totalImgs - 1){
+                    currentIndex = 0;
+                }else{
+                    currentIndex++;
+                }
+            }else{
+                if(currentIndex == 0){
+                    currentIndex = totalImgs - 1;
+                }else{
+                    currentIndex--;
+                }
+            }
+            console.log(currentIndex);
+
+            wrapper.style.marginLeft = (-currentIndex) * defaultWidth + 'px';
+
+        }
+
     </script>
 </body>
 </html>
