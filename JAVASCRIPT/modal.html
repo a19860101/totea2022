@@ -35,7 +35,7 @@
     <a href="#" data-modal="#modal-1" class="modal-btn">Modal 1</a>
     <a href="#" data-modal="#modal-2" class="modal-btn">Modal 2</a>
     <div class="modal" id="modal-1">
-        <div class="modal-overlay"></div>
+        <div class="modal-overlay modal-close"></div>
         <div class="modal-container">
             <div class="modal-header">
                 <h3>Modal 1</h3>
@@ -75,7 +75,7 @@
         }
         document.body.onclick = function(e){
             if(e.target.className.indexOf('modal-close') > -1){
-                console.log('close');
+                document.querySelector('.modal.active').classList.remove('active');
             }
         }
     </script>
