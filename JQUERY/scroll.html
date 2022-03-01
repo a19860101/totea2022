@@ -83,7 +83,7 @@
     <section id="contact">
         <h1>contact</h1>
     </section>
-    <a href="#" class="gotop"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
+    <a href="#" class="gotop animated"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
     <script>
         $(function(){
             $('nav').find('a').click(function(e){
@@ -104,12 +104,17 @@
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
                 console.log(h);
+                let animateIn = 'zoomIn';
+                let animateOut = 'hinge';
                 if(h > 600){
                     // $('.gotop').show();
-                    $('.gotop').fadeIn();
+                    // $('.gotop').fadeIn();
+                    $('.gotop').show().removeClass(animateOut).addClass(animateIn);
                 }else{
                     // $('.gotop').hide();
-                    $('.gotop').fadeOut();
+                    // $('.gotop').fadeOut();
+                    $('.gotop').removeClass(animateIn).addClass(animateOut);
+
                 }
             });
         })
