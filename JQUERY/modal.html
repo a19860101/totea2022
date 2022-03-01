@@ -72,7 +72,10 @@
         $(function(){
             $('.modal-btn').click(function(){
                 let modal = $(this).data('modal');
-                console.log(modal);
+                $(modal).fadeIn();
+            })
+            $('.modal-close').click(function(){
+                $('.modal').fadeOut();
             })
         })
     </script>
