@@ -74,7 +74,11 @@
         $(function(){
             $('nav').find('a').click(function(){
                 let href = $(this).attr('href');
-                console.log(href);
+                let distance = $(href).offset().top;
+                console.log(distance);
+                $('body,html').animate({
+                    scrollTop: distance
+                });
             })
         })
     </script>
