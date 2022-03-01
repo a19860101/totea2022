@@ -25,7 +25,16 @@
             display: inline-block;
             padding: 15px 10px;
             color: #eee;
-            text-decoration: none;;
+            text-decoration: none;
+            transition: .4s;
+        }
+        nav a.active {
+            background-color: #d5ff93;
+            color: #222;
+        }
+        nav a:hover {
+            background-color: #d5ff93;
+            color: #222;
         }
         h1 {
             font-size: 5em;
@@ -72,7 +81,7 @@
         <a href="#contact" data-target="#contact">Contact</a>
     </nav>
     <section id="about">
-        <h1 class="animated rotateOutDownLeft">about</h1>
+        <h1>about</h1>
     </section>
     <section id="service">
         <h1>service</h1>
@@ -94,6 +103,8 @@
                 $('body,html').animate({
                     scrollTop: distance
                 });
+                $('nav').find('a').removeClass('active');
+                $(this).addClass('active');
             })
             $('.gotop').click(function(e){
                 $('body,html').animate({
