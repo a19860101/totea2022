@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         * {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
             font-family: 'Segoe UI';
             box-sizing: border-box;
         }
+
         nav {
             width: 100%;
             background-color: #222;
             text-align: center;
             position: fixed;
         }
+
         nav a {
             display: inline-block;
             padding: 15px 10px;
@@ -28,74 +31,245 @@
             text-decoration: none;
             transition: .4s;
         }
+
         nav a.active {
             background-color: #d5ff93;
             color: #222;
         }
+
         nav a:hover {
             background-color: #d5ff93;
             color: #222;
         }
+
         h1 {
             font-size: 5em;
             text-transform: capitalize;
+            text-align: center;
         }
-        section {
+
+        header {
             width: 100%;
             height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-image: url('https://picsum.photos/id/66/1600/1000');
+            background-position: center;
+            background-size: cover;
         }
+
+        .col {
+            flex: 1 0 0;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            height: 100vh;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
         #about {
             background-color: #ff3c76;
         }
+
         #service {
             background-color: #ffdc6b;
         }
+
         #product {
             background-color: #3ca1ff;
         }
+
         #contact {
             background-color: #6bffc1;
         }
+
         /* gotop */
 
         .gotop {
             position: fixed;
             right: 30px;
             bottom: 30px;
-            color:#001625;
+            color: #001625;
             z-index: 999;
 
             display: none;
         }
     </style>
 </head>
+
 <body>
     <nav>
-        <a href="#about" data-target="#about" class="active">About</a>
+        <a href="#about" data-target="#about">About</a>
         <a href="#service" data-target="#service">Service</a>
         <a href="#product" data-target="#product">Product</a>
         <a href="#contact" data-target="#contact">Contact</a>
     </nav>
+    <header></header>
     <section id="about">
-        <h1>about</h1>
+
+        <div class="container">
+            <div class="col">
+                <h1>about</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+        </div>
     </section>
     <section id="service">
-        <h1>service</h1>
+
+        <div class="container">
+            <div class="col">
+                <h1>service</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+        </div>
     </section>
     <section id="product">
-        <h1>product</h1>
+        <div class="container">
+            <div class="col">
+                <h1>product</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+        </div>
     </section>
     <section id="contact">
-        <h1>contact</h1>
+        <div class="container">
+            <div class="col">
+                <h1>contact</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+            <div class="col">
+                <h2>title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur voluptate mollitia
+                    asperiores magni expedita eaque provident possimus, labore modi laboriosam, soluta inventore
+                    sapiente, qui distinctio recusandae alias quasi quaerat!
+                </p>
+            </div>
+        </div>
     </section>
     <a href="#" class="gotop animated"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
     <script>
-        $(function(){
-            $('nav').find('a').click(function(e){
+        $(function () {
+            $('nav').find('a').click(function (e) {
                 e.preventDefault();
                 // let href = $(this).attr('href');
                 let target = $(this).data('target');
@@ -106,31 +280,31 @@
                 $('nav').find('a').removeClass('active');
                 $(this).addClass('active');
             })
-            $('.gotop').click(function(e){
+            $('.gotop').click(function (e) {
                 $('body,html').animate({
                     scrollTop: 0
                 });
                 e.preventDefault();
             })
-            $(window).scroll(function(){
+            $(window).scroll(function () {
                 let h = $(window).scrollTop();
                 // console.log(h);
                 let animateIn = 'zoomIn';
                 let animateOut = 'hinge';
-                if(h > 600){
+                if (h > 600) {
                     // $('.gotop').show();
                     // $('.gotop').fadeIn();
                     $('.gotop').show().removeClass(animateOut).addClass(animateIn);
-                }else{
+                } else {
                     // $('.gotop').hide();
                     // $('.gotop').fadeOut();
                     $('.gotop').removeClass(animateIn).addClass(animateOut);
 
                 }
-                $('nav').find('a').each(function(){
+                $('nav').find('a').each(function () {
                     let target = $(this).attr('href');
                     let distance = $(target).offset().top;
-                    if(h  >= distance - 100){
+                    if (h >= distance - 100) {
                         $('nav').find('a').removeClass('active');
                         $(this).addClass('active');
 
@@ -140,4 +314,5 @@
         })
     </script>
 </body>
+
 </html>
