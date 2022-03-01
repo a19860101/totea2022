@@ -64,10 +64,10 @@
 </head>
 <body>
     <nav>
-        <a href="#about">About</a>
-        <a href="#service">Service</a>
-        <a href="#product">Product</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-target="#about">About</a>
+        <a href="#service" data-target="#service">Service</a>
+        <a href="#product" data-target="#product">Product</a>
+        <a href="#contact" data-target="#contact">Contact</a>
     </nav>
     <section id="about">
         <h1>about</h1>
@@ -85,8 +85,9 @@
     <script>
         $(function(){
             $('nav').find('a').click(function(){
-                let href = $(this).attr('href');
-                let distance = $(href).offset().top;
+                // let href = $(this).attr('href');
+                let target = $(this).data('target');
+                let distance = $(target).offset().top;
                 console.log(distance);
                 $('body,html').animate({
                     scrollTop: distance
