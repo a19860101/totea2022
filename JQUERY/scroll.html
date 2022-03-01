@@ -59,6 +59,8 @@
             bottom: 30px;
             color:#001625;
             z-index: 999;
+
+            display: none;
         }
     </style>
 </head>
@@ -88,7 +90,6 @@
                 // let href = $(this).attr('href');
                 let target = $(this).data('target');
                 let distance = $(target).offset().top;
-                console.log(distance);
                 $('body,html').animate({
                     scrollTop: distance
                 });
@@ -98,6 +99,17 @@
                     scrollTop: 0
                 });
             })
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                console.log(h);
+                if(h > 600){
+                    // $('.gotop').show();
+                    $('.gotop').fadeIn();
+                }else{
+                    // $('.gotop').hide();
+                    $('.gotop').fadeOut();
+                }
+            });
         })
     </script>
 </body>
