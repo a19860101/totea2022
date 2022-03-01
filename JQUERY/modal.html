@@ -9,7 +9,16 @@
 
     <style>
         .modal {
-            display: none;
+            /* display: none; */
+            position: relative;
+            opacity: 0;
+            z-index: -1;
+            transition: .4s;
+        }
+        .modal.active {
+            /* display: block; */
+            opacity: 1;
+            z-index: 10;
         }
         .modal-overlay {
             position: fixed;
@@ -30,7 +39,13 @@
             left: 0;
             right: 0;
             top: 50%;
-            transform: translateY(-50%);
+            /* transform: translateY(-100%); */
+            transform: translateY(-50%)scale(.5);
+            transition: .6s;
+        }
+        .modal.active .modal-container{
+            /* transform: translateY(-50%); */
+            transform: translateY(-50%)scale(1);
         }
     </style>
 </head>
@@ -72,10 +87,12 @@
         $(function(){
             $('.modal-btn').click(function(){
                 let modal = $(this).data('modal');
-                $(modal).fadeIn();
+                // $(modal).fadeIn();
+                $(modal).addClass('active');
             })
             $('.modal-close').click(function(){
-                $('.modal').fadeOut();
+                // $('.modal').fadeOut();
+                $('.modal.active').removeClass('active');
             })
         })
     </script>
