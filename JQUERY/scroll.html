@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         * {
@@ -72,7 +72,7 @@
         <a href="#contact" data-target="#contact">Contact</a>
     </nav>
     <section id="about">
-        <h1>about</h1>
+        <h1 class="animated rotateOutDownLeft">about</h1>
     </section>
     <section id="service">
         <h1>service</h1>
@@ -86,7 +86,8 @@
     <a href="#" class="gotop"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
     <script>
         $(function(){
-            $('nav').find('a').click(function(){
+            $('nav').find('a').click(function(e){
+                e.preventDefault();
                 // let href = $(this).attr('href');
                 let target = $(this).data('target');
                 let distance = $(target).offset().top;
@@ -94,10 +95,11 @@
                     scrollTop: distance
                 });
             })
-            $('.gotop').click(function(){
+            $('.gotop').click(function(e){
                 $('body,html').animate({
                     scrollTop: 0
                 });
+                e.preventDefault();
             })
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
