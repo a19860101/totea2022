@@ -114,7 +114,7 @@
             })
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
-                console.log(h);
+                // console.log(h);
                 let animateIn = 'zoomIn';
                 let animateOut = 'hinge';
                 if(h > 600){
@@ -127,6 +127,11 @@
                     $('.gotop').removeClass(animateIn).addClass(animateOut);
 
                 }
+                $('nav').find('a').each(function(){
+                    let target = $(this).attr('href');
+                    let distance = $(target).offset().top;
+                    console.log(distance);
+                })
             });
         })
     </script>
