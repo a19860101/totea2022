@@ -10,17 +10,21 @@
 <body>
     
     <h1>hello jquery</h1>
+    <a href="#" class="btn">CLICK</a>
     <script>
-        $(document).ready(function(){
-            $('h1').css({
-                color:'red'
-            })
-        });
-        // $(function(){
+        // $(document).ready(function(){
         //     $('h1').css({
         //         color:'red'
         //     })
-        // })
+        // });
+        $(function(){
+            $('h1').css({
+                color:'red'
+            })
+            $('.btn').click(function(){
+                alert('hello jquery');
+            });
+        })
     </script>
 </body>
 </html>
