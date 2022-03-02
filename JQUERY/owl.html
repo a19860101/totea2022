@@ -29,6 +29,13 @@
             background-color: #fff;
             border-radius: 10px;
         }
+        .owl-theme .owl-nav [class*=owl-] {
+            background-color: #222;
+            transition: .5s;
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background-color: crimson;
+        }
     </style>
 </head>
 <body>
@@ -109,7 +116,9 @@
                 autoplaySpeed: 1200,
                 dotsSpeed:1200,
                 navSpeed:1200,
-                stagePadding: 100
+                stagePadding: 100,
+                navText: ['上一張','下一張'],
+                navElement: 'div'
             });
             $('.products').owlCarousel({
                 items: 4,
