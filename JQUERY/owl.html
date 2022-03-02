@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-    <div class="slider">
+    <div class="slider owl-carousel owl-theme">
         <img src="https://picsum.photos/id/66/1200/600" alt="">
         <img src="https://picsum.photos/id/16/1200/600" alt="">
         <img src="https://picsum.photos/id/26/1200/600" alt="">
@@ -100,7 +100,12 @@
     </div>
     <script>
         $(function(){
-
+            $('.slider').owlCarousel({
+                items: 1,
+                autoplay: true,
+                dots: true,
+                nav: true
+            });
         })
     </script>
 </body>
