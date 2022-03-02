@@ -39,12 +39,12 @@
             bottom: 0;
             right: 0;
             width:200px;
+            /* transform: translateX(100%); */
+            opacity: 0;
+            transition: .6s .8s;
         }
-        .slick-slide {
-            opacity: .5;
-            transition: .3s .3s;
-        }
-        .slick-slide.slick-active {
+        .slider-item.slick-active .slider-content{
+            /* transform: translateX(0); */
             opacity: 1;
         }
     </style>
