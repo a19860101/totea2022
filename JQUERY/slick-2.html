@@ -13,6 +13,9 @@
         body {
             background-color: #ffbda9;
         }
+        img {
+            width: 100%;
+        }
         .slider {
             width: 1200px;
             margin: auto;
@@ -36,6 +39,13 @@
             bottom: 0;
             right: 0;
             width:200px;
+        }
+        .slick-slide {
+            opacity: .5;
+            transition: .3s .3s;
+        }
+        .slick-slide.slick-active {
+            opacity: 1;
         }
     </style>
 </head>
@@ -78,7 +88,9 @@
                 arrows: true,
                 speed: 1000,
                 autoplaySpeed: 6000,
-                fade: false
+                fade: false,
+                centerMode: false,
+                // centerPadding: '200px'
             });
         })
     </script>
