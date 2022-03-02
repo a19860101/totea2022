@@ -27,7 +27,6 @@
         .product-item {
             padding: 15px;
             background-color: #fff;
-            margin: 10px;
             border-radius: 10px;
         }
     </style>
@@ -40,7 +39,7 @@
         <img src="https://picsum.photos/id/36/1200/600" alt="">
         <img src="https://picsum.photos/id/46/1200/600" alt="">
     </div>
-    <div class="products">
+    <div class="products owl-carousel owl-theme">
         <div class="product-item">
             <img src="https://picsum.photos/id/65/800/600" alt="">
             <h3>title</h3>
@@ -109,8 +108,16 @@
                 autoplayTimeout: 5000,
                 autoplaySpeed: 1200,
                 dotsSpeed:1200,
-                navSpeed:1200
+                navSpeed:1200,
+                stagePadding: 100
             });
+            $('.products').owlCarousel({
+                items: 4,
+                margin: 15,
+                center: true,
+                loop: true,
+                stagePadding: 0
+            })
         })
     </script>
 </body>
