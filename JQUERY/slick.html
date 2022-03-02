@@ -10,6 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <style>
+        body {
+            background-color: #ffbda9;
+        }
         .slider {
             width: 1200px;
             margin: auto;
@@ -24,5 +27,14 @@
         <img src="https://picsum.photos/id/36/1200/600" alt="">
         <img src="https://picsum.photos/id/46/1200/600" alt="">
     </div>
+    <script>
+        $(function(){
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: true
+            });
+        })
+    </script>
 </body>
 </html>
