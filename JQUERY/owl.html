@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
@@ -30,11 +31,15 @@
             border-radius: 10px;
         }
         .owl-theme .owl-nav [class*=owl-] {
-            background-color: #222;
+            background-color: transparent;
             transition: .5s;
+            border-radius: 50%;
         }
         .owl-theme .owl-nav [class*=owl-]:hover {
-            background-color: crimson;
+            background-color: transparent;
+        }
+        .owl-theme .owl-nav [class*=owl-] i {
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -117,7 +122,7 @@
                 dotsSpeed:1200,
                 navSpeed:1200,
                 stagePadding: 100,
-                navText: ['上一張','下一張'],
+                navText: ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
                 navElement: 'div'
             });
             $('.products').owlCarousel({
