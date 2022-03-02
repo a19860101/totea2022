@@ -41,6 +41,21 @@
             bottom: 0;
             right: 0;
             width:200px;
+            transform: translateX(100%);
+
+            transition: .6s;
+
+        }
+        .owl-item {
+            /* opacity: .5; */
+            transition: .5s;
+        }
+        .owl-item.active{
+            /* opacity: 1; */
+        }
+        .owl-item.active .slider-content {
+            transform: translateX(0);
+            transition: .6s .6s;
 
         }
 
@@ -81,10 +96,13 @@
         $(function(){
             $('.slider').owlCarousel({
                 items: 1,
-                stagePadding: 100,
+                // stagePadding: 100,
                 loop: true,
                 navSpeed: 1000,
-                dotsSpeed:1000
+                dotsSpeed:1000,
+                nav: true,
+                navText: ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+                navElement: 'div'
 
             })
         })
