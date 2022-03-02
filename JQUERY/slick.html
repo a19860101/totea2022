@@ -17,6 +17,19 @@
             width: 1200px;
             margin: auto;
         }
+        img {
+            width: 100%;
+        }
+        .products {
+            width: 1200px;
+            margin: auto;
+        }
+        .product-item {
+            padding: 15px;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -27,12 +40,66 @@
         <img src="https://picsum.photos/id/36/1200/600" alt="">
         <img src="https://picsum.photos/id/46/1200/600" alt="">
     </div>
+    <div class="products">
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/65/800/600" alt="">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, amet?
+            </p>
+        </div>
+    </div>
     <script>
         $(function(){
             $('.slider').slick({
                 autoplay: true,
                 dots: true,
                 arrows: true
+            });
+            $('.products').slick({
+                slidesToShow: 4
             });
         })
     </script>
