@@ -287,3 +287,20 @@ header .owl-theme .owl-nav [class*="owl-"] {
     align-items: center;
     justify-content: center;
 }
+
+#product .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#product .owl-prev {
+    position: relative;
+    left: -80px;
+}
+#product .owl-next {
+    position: relative;
+    right: -80px;
+}
