@@ -11,6 +11,9 @@
         * {
             font-family: 'Gill Sans MT';
         }
+        body {
+            background-color: #ffd6dd;
+        }
         .container {
             margin: auto;
         }
@@ -20,8 +23,18 @@
             border: 1px solid #444;
             margin: 10px;
             line-height: 1.5;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.178);
         }
     </style>
+    <script>
+        $(function(){
+            $('.container').masonry({
+                isFitWidth: true
+            });
+        })
+    </script>
 </head>
 <body>
     <div class="container">
