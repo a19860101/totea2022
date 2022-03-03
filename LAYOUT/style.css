@@ -111,6 +111,12 @@ header img {
     padding-bottom: 150px;
     background-color: #f7ffdc;
 }
+#product .row {
+    flex-wrap: nowrap;
+}
+#product .col {
+    flex: 0 0 calc(100% / 4);
+}
 #product .content {
     /* border:1px solid #8d8d8d; */
     border-top: 0;
@@ -260,19 +266,19 @@ footer li {
 }
 
 /* owl carousel */
-.owl-nav {
+header .owl-nav {
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.owl-dots {
+header .owl-dots {
     position: absolute;
     bottom:0 ;
     width: 100%;
 }
-.owl-theme .owl-nav [class*="owl-"] {
+header .owl-theme .owl-nav [class*="owl-"] {
     border-radius: 50%;
     background-color: #222;
     width: 40px;

@@ -172,7 +172,7 @@
     <div id="product">
         <h2 class="wow fadeIn" data-wow-offset="150">Product</h2>
 
-        <div class="container row">
+        <div class="container row product-slider owl-carousel owl-theme">
             <div class="col wow fadeInUp" data-wow-delay="0s" data-wow-offset="150">
                 <div class="wrapper">
                     <a href="https://picsum.photos/id/84/800/600" data-lightbox="g">
@@ -224,7 +224,7 @@
                 </div>
             </div>
 
-            <div class="w-100"></div>
+            <!-- <div class="w-100"></div> -->
 
             <div class="col wow fadeInUp" data-wow-delay="0.9s" data-wow-offset="150">
                 <div class="wrapper">
@@ -464,6 +464,14 @@
                 navText: ['<i class="fa-solid fa-chevron-left fa-2x"></i>','<i class="fa-solid fa-chevron-right fa-2x"></i>'],
                 navElement: 'div',
             });
+            $('.product-slider').owlCarousel({
+                items: 4,
+                center: true,
+                loop: true,
+                nav: true,
+                navText: ['<i class="fa-solid fa-chevron-left fa-2x"></i>','<i class="fa-solid fa-chevron-right fa-2x"></i>'],
+                navElement: 'div',
+            })
         })
     </script>
 </body>
