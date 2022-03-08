@@ -9,3 +9,22 @@
 .carousel-indicators {
     bottom: -54px;
 }
+
+/* collection */
+#collection {
+    padding: 100px 0;
+}
+.collection-item {
+    height: 400px;
+}
+.collection-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+.collection-item a {
+    transition: .3s;
+}
+.collection-item a:hover {
+    opacity: .6;
+}
