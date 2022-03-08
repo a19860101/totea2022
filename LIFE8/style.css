@@ -12,7 +12,7 @@
 
 /* collection */
 #collection {
-    padding: 100px 0;
+    padding-top: 100px;
 }
 .collection-item {
     height: 400px;
@@ -30,11 +30,21 @@
 }
 /* event */
 #event {
-    padding: 100px 0;
+    padding-top: 100px;
 }
 .event-item a {
     transition: .3s;
 }
 .event-item a:hover {
+    opacity: .6;
+}
+/* info */
+#info {
+    padding-top: 100px;
+}
+.info-item a {
+    transition: .3s;
+}
+.info-item a:hover {
     opacity: .6;
 }
