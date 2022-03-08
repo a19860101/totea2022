@@ -48,3 +48,17 @@
 .info-item a:hover {
     opacity: .6;
 }
+/* footer */
+footer {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+footer a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 14px;
+    line-height: 2.5;
+}
+footer a:hover {
+    color: #bdbdbd;
+}
