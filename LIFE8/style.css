@@ -121,3 +121,18 @@ footer a:hover {
 .product-item {
     font-size: 12px;
 }
+/* .product-item a{
+    transition: .5s;
+}
+.product-item a:hover{
+    opacity: .6;
+} */
+.product-overlay {
+    z-index: 999;
+    background-color: #fa0;
+    opacity: 0;
+    transition: .3s;
+}
+.product-item a:hover .product-overlay {
+    opacity: 1;
+}
