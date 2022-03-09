@@ -91,3 +91,19 @@ footer a:hover {
 .gotop:hover {
     color: #9b9b9b;
 }
+/* sidebar */
+.sidebar .sidebar-title a{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sidebar a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #222;
+}
+.sidebar ul ul a:hover {
+    color: #999;
+}
+.recommend ul a {
+    color: #c8004d;
+}
