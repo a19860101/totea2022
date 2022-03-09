@@ -107,3 +107,13 @@ footer a:hover {
 .recommend ul a {
     color: #c8004d;
 }
+
+/* .sidebar li a{
+    padding-left: 10px;
+    background-image: url('images/arrow.svg');
+    background-repeat: no-repeat;
+} */
+
+.sidebar li {
+    list-style-type: '\203A';
+}
