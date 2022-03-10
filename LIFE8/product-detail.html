@@ -168,7 +168,7 @@
                     </div>
                     <div class="col-6">
                         <div class="d-flex justify-content-between">
-                            <h4 style="font-size:15px" class="fw-bold">純棉拉克蘭七分袖T恤-女（ 磚桔 -S）</h4>
+                            <h4 style="font-size:15px" class="fw-bold">純棉拉克蘭七分袖T恤-女（ <span class="p-color">磚桔</span> -<span class="p-size">S</span>）</h4>
                             <div class="text-end">
                                 <div class=" fw-bold text-dark"><del>299</del></div>
                                 <div class="d-flex text-danger">
@@ -181,16 +181,16 @@
                         <hr>
                         <div>
                             <div class="my-4">
-                                <img src="https://s4.lativ.com.tw/i/56269/56269011/5626901_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269011/5626901_500.jpg" class="me-3 p-item" alt="" width="30">
-                                <img src="https://s3.lativ.com.tw/i/56269/56269021/5626902_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269021/5626902_500.jpg" class="me-3 p-item" alt="" width="30">
-                                <img src="https://s4.lativ.com.tw/i/56269/56269031/5626903_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269031/5626903_500.jpg" class="me-3 p-item" alt="" width="30">
-                                <img src="https://s3.lativ.com.tw/i/56269/56269041/5626904_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269041/5626904_500.jpg" class="me-3 p-item" alt="" width="30">
+                                <img src="https://s4.lativ.com.tw/i/56269/56269011/5626901_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269011/5626901_500.jpg" data-color="磚桔" class="me-3 p-item" alt="" width="30">
+                                <img src="https://s3.lativ.com.tw/i/56269/56269021/5626902_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269021/5626902_500.jpg" data-color="深灰藍" class="me-3 p-item" alt="" width="30">
+                                <img src="https://s4.lativ.com.tw/i/56269/56269031/5626903_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269031/5626903_500.jpg" data-color="深灰綠" class="me-3 p-item" alt="" width="30">
+                                <img src="https://s3.lativ.com.tw/i/56269/56269041/5626904_48.jpg" data-img="https://s.lativ.com.tw/i/56269/56269041/5626904_500.jpg" data-color="黑色" class="me-3 p-item" alt="" width="30">
                             </div>
                             <div class="my-4">
-                                <span class="d-inline-block bg-secondary px-4 py-1 me-3">S</span>
-                                <span class="d-inline-block bg-secondary px-4 py-1 me-3">M</span>
-                                <span class="d-inline-block bg-secondary px-4 py-1 me-3">L</span>
-                                <span class="d-inline-block bg-secondary px-4 py-1 me-3">XL</span>
+                                <span class="d-inline-block bg-secondary px-4 py-1 me-3 p-size-item" data-size="S">S</span>
+                                <span class="d-inline-block bg-secondary px-4 py-1 me-3 p-size-item" data-size="M">M</span>
+                                <span class="d-inline-block bg-secondary px-4 py-1 me-3 p-size-item" data-size="L">L</span>
+                                <span class="d-inline-block bg-secondary px-4 py-1 me-3 p-size-item" data-size="XL">XL</span>
                             </div>
                             <div class="my-4 text-end info">
                                 <a href="#" class="ms-3 text-decoration-none link-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
@@ -317,8 +317,14 @@
         $(function(){
             $('.p-item').click(function(){
                 let img = $(this).data('img');
-                console.log(img);
+                let color = $(this).data('color');
+                console.log(color);
                 $('.p-gallery').attr('src',img);
+                $('.p-color').text(color);
+            })
+            $('.p-size-item').click(function(){
+                let size = $(this).data('size');
+                $('.p-size').text(size);
             })
         })
     </script>
